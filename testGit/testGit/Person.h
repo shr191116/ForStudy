@@ -12,4 +12,5 @@
 @property (nonatomic , strong)NSString *name;
 @property (nonatomic , strong)NSString *gender;
 @property (nonatomic , assign)NSInteger age;
+-(void)eatFood;
 @end
