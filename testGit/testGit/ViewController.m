@@ -9,14 +9,16 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic , strong)UITableView *tableV;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.tableV = [[UITableView alloc] initWithFrame:self.view.bounds style:0];
+    [self.view addSubview:self.tableV];
+    self.tableV.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning {
